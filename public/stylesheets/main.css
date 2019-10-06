@@ -1,0 +1,19 @@
+#cardImg{
+    max-width: 100%;
+    max-height: 70%;
+
+}
+
+#camps{
+    max-width: fit-content;
+    object-fit: cover;
+}
+
+.cardItem{
+    padding: 0;
+    height: 100%;
+}
+
+#delete-form{
+    display: inline;
+}

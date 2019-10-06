@@ -1,0 +1,54 @@
+<% include ../partials/header %>
+
+<div class="registration mt-4">
+  <div class="new-ground" style="text-align: center">
+    <h1>Edit the Campground</h1>
+  </div>
+  <div class="registration-form">
+
+    <div class="container">
+      <div class="row">
+          
+          <div style=" width: 30%;height: 300px;padding: 20px;margin: 50px auto" class="card">
+                <form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
+                    <div class="form-group" >
+                            <label for="name">Name</label>
+                            <input
+                              type="text"
+                              name="campground[name]"
+                              id=""
+                              class="form-control"
+                              value="<%= campground.name %>"
+                            />
+                          </div>
+                  
+                          <div class="form-group">
+                            <label for="image">Image</label>
+                            <input
+                              type="text"
+                              name="campground[image]"
+                              id=""
+                              class="form-control"
+                              value="<%= campground.image %>"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="description">Short description</label>
+                            <input type="text" name="campground[description]" class="form-control"
+                            value="<%= campground.description %>">
+                          </div>
+                  
+                          <button type="submit" class="btn btn-primary btn-block">
+                            Update
+                          </button>
+                  
+              </form>
+              <a href="/campgrounds" >Go Back</a>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+

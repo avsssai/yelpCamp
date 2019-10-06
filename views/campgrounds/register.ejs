@@ -1,0 +1,53 @@
+<% include ../partials/header %>
+
+<div class="registration mt-4">
+  <div class="new-ground" style="text-align: center">
+    <h1>Register a new Campground</h1>
+  </div>
+  <div class="registration-form">
+
+    <div class="container">
+      <div class="row">
+          
+          <div style=" width: 30%;height: 300px;padding: 20px;margin: 50px auto" class="card">
+                <form action="/campgrounds" method="POST">
+                    <div class="form-group" >
+                            <label for="name">Name</label>
+                            <input
+                              type="text"
+                              name="name"
+                              id=""
+                              placeholder="new Camp..."
+                              class="form-control"
+                            />
+                          </div>
+                  
+                          <div class="form-group">
+                            <label for="image">Image</label>
+                            <input
+                              type="text"
+                              name="image"
+                              id=""
+                              placeholder="Image of Camp..."
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="description">Short description</label>
+                            <input type="text" name="description" placeholder="description.." class="form-control">
+                          </div>
+                  
+                          <button type="submit" class="btn btn-primary btn-block">
+                            Register
+                          </button>
+                  
+              </form>
+              <a href="/campgrounds" >Go Back</a>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
